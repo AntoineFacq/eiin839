@@ -16,11 +16,4 @@ function contractsRetrieved() {
     // Let's parse the response:
     var response = JSON.parse(this.responseText);
     console.log(response);
-    for (var i = 0; i < response.length;i++) {
-        var li = document.createElement("option");
-        li.setAttribute("value", response[i].name);
-        let name = document.createTextNode(response[i].name);
-        li.appendChild(name);
-        document.getElementById("input").appendChild(li);
-    }
 }
